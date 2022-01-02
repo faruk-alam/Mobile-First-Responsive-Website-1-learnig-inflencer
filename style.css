@@ -1,0 +1,302 @@
+/* this css file for home page(index.html) */
+/* reset */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+/* base styles */
+body{
+    background-color: #351F3A;
+    overflow-x: hidden;
+}
+
+/* mobile styles */
+
+section.main-heading{
+    background: url(images/main-heading.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 25px 15px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+section.main-heading ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 45px;
+}
+section.main-heading ul li a{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-bottom: 2px solid #f5a425;
+    border-top: 1px solid #f5a425;
+    padding: 5px;
+    display: block;
+}
+section.main-heading ul li a:hover{
+    color: #f5a425;
+}
+/* style about-us section */
+section.about-us{
+    background: #162238;
+    padding-top: 1px;
+    text-align: center;
+}
+section.about-us h2{
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.about-us-qlty{
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.about-us-qlty article img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+.about-us-qlty article h3{
+    text-transform: uppercase;
+    color: #f5a425;
+}
+.about-us-qlty article h4{
+    font-weight: lighter;
+    color: burlywood;
+
+}
+.about-us-qlty article hgroup{
+    text-align: justify;
+    padding: 0 20px;
+}
+.about-us-qnty{
+    background: #351F3A;
+    padding: 10px 0;
+    color: #FFFFFF;
+}
+
+.virtual,.academic{
+    padding: 20px 50px;
+    text-align: justify;
+}
+div.virtual h2,div.academic h2{
+    color: #f5a425;
+}
+
+ul.virtual-stuff,ul.academic-stuff{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    justify-content: space-around;
+    margin-top: 25px;
+}
+ul.virtual-stuff li,ul.academic-stuff li{
+    margin-bottom: 20px;
+    border-right: 2px solid #ffffff;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+ul.virtual-stuff li strong,ul.academic-stuff li strong{
+    font-size: 27px;
+}
+ul.virtual-stuff li span,ul.academic-stuff li span{
+    display: block;
+    text-transform: uppercase;
+    font-size: larger;
+}
+section.brands{
+    margin: 20px;
+    text-align: center;
+}
+section.brands h2{
+    text-align: justify;
+    color: #FFFFFF;
+}
+.brands-stuff img{
+    width: 280px;
+    height: auto;
+    padding-bottom: 10px;
+}
+.brands-stuff{
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    justify-content: center;
+    gap: 10px;
+}
+div.testimonial-speech h2{
+    text-align: center;
+}
+div.testimonial-speech p strong{
+    color: #f5a425;
+    text-align: center;
+}
+div.testimonial-speech p span{
+    display: block;
+    color:  burlywood;
+
+}
+div.testimonial-speech p.para{
+    text-align: justify;
+    margin: 10px 30px 20px 30px;
+    color: #ffffff;
+}
+div.testimonial-speech article img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.form-section{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: #fafafa1a;
+}
+.form-section h3{   
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+    background-color: #fafafa33;
+}
+.form-section form{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.form-section form input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #fafafa1a;
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    
+}
+.form-section form button{
+    margin-top: 10px;
+    background-color: #f5a425;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.form-section form button:hover{
+    background-color: #4D1F64;
+    transition: 0.25s;
+}
+.media-contact{
+    background-color: #2b2b4d;
+    text-align: center;
+    border: none;
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+.media-contact h2{
+    color:  #f5a425;
+}
+.media-contact h3{
+    color: burlywood;    
+}
+.media-contact ul li a{
+    border: 1.5px solid burlywood;
+    padding: 5px;
+    margin: 8px;
+    border-radius: 7px;
+    font-size: 40px;
+    display: inline-block;
+}
+.media-contact ul li:nth-child(1) a{
+    color: #4267B2;
+}
+.media-contact ul li:nth-child(2) a{
+    color: #1D9BF0;
+}
+.media-contact ul li:nth-child(3) a{
+    color:  #F2A60C;
+}
+.media-contact ul li:nth-child(4) a{
+    color: #FF0000;
+}
+.media-contact ul li:nth-child(5) a{
+    color: #0A66C2;
+}
+
+.media-contact ul li :hover{
+    background-color: rgb(95, 92, 92);
+}
+footer p{
+    background: #162138;
+    color: #f5a425;
+    padding: 10px 0;
+    text-align: center;
+}
+/* small tablet styles */
+@media screen and (min-width: 620px){
+    body{
+        font: 17px;
+    }
+} 
+
+/* large tablet & laptop styles */
+@media screen and (min-width: 960px){
+    body{
+        font-size: 18px;
+    }
+    section.about-us article{
+        display: flex;
+        gap: 35px;
+    }
+section.main-heading ul{
+    display: flex;
+    flex-direction: row;
+    padding: 120px 0;
+    justify-content: center;
+    gap: 180px;
+}
+section.main-heading ul li a{
+    text-transform: uppercase;
+    background-color: #4D1F64;
+    border: none;
+    padding: 8px 15px;
+    color: #f5a425;
+    font-weight: bolder;
+    font-size: larger;
+}  
+section.main-heading ul li a:hover{
+    color: #ffffff;
+    transition: 0.8s;
+   }
+   .about-us-qlty article hgroup{
+    margin-top: 45px;
+    text-align: justify;
+    padding: 0 20px;
+}
+   footer div.contact{
+    display: flex;
+    gap:10px;
+}
+
+}
+
+
+/* desktop styles */
+@media screen and (min-width: 1200px){
+    body{
+        font-size: 19px;
+    }
+
+}
